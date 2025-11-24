@@ -1,1 +1,1 @@
-"# webpack-template with jest" 
+# script for repetitive tasks - accounting for journal entries
