@@ -1,15 +1,23 @@
-import _ from 'lodash'; 
-import './style.css';
+import "./styles/style-reset.css";
+import "./styles/style.css";
+import logo from "./assets/mn_bg_white.ico";
+import { googleFonts } from "./components/google-fonts";
+import { homepage } from "./components/homepage";
 
-import printMe from './print.js';
+const link = document.createElement("link");
+link.setAttribute("rel", "icon");
+link.setAttribute("type", "image/ico");
+link.setAttribute("href", logo);
 
-function component() {
-    const element = document.createElement('div');
-  
-     // Lodash, now imported by this script   
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  
-    return element;
-  }
-  
-  document.body.appendChild(component());
+const meta = document.createElement("meta");
+meta.setAttribute("name", "description");
+meta.setAttribute(
+  "content",
+  "description of how the script for repetitive accounting tasks works"
+);
+
+googleFonts();
+homepage();
+
+document.head.appendChild(meta);
+document.head.appendChild(link);
