@@ -1,10 +1,11 @@
 {
   "name": "webpack-template",
- "version": "1.0.0",
+  "version": "1.0.0",
   "description": "",
   "private": true,
   "scripts": {
     "test": "jest",
+    "lint": "eslint . --ignore-pattern 'dist/**' ",
     "watch": "webpack --watch",
     "start": "webpack serve --open",
     "build": "webpack"
@@ -14,8 +15,11 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.24.8",
+    "@eslint/js": "^9.39.1",
     "css-loader": "^7.1.2",
     "csv-loader": "^3.0.5",
+    "eslint": "^9.39.1",
+    "globals": "^16.5.0",
     "html-webpack-plugin": "^5.6.0",
     "jest": "^29.7.0",
     "json-loader": "^0.5.7",
@@ -28,4 +32,3 @@
     "lodash": "^4.17.21"
   }
 }
-
