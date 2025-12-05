@@ -8,7 +8,8 @@
     "lint": "eslint . --ignore-pattern 'dist/**' ",
     "watch": "webpack --watch",
     "start": "webpack serve --open",
-    "build": "webpack"
+    "build": "webpack",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "keywords": [],
   "author": "",
