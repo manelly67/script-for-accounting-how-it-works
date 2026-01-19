@@ -1,5 +1,6 @@
 ##  This repository explains how the script for repetitive accounting tasks works
 
+see the link: https://manelly67.github.io/script-for-accounting-how-it-works
 
 ### A well-designed Google Sheets + Google Apps Script system.
 
